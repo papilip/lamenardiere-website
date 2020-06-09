@@ -1,0 +1,34 @@
+<div class="main-content">
+  <div class='section-light' id='le_chateau_descriptif'>
+    <div class='container'>
+      <div class='column is-12'>
+        <h1 class='title has-text-centered section-title'>La Ménardière en poème</h1>
+      </div>
+
+      <div class='columns is-multiline'>
+        <div class='column is-6 has-vertically-aligned-content'>
+          <% data.poemes.un.each do |strophe| -%>
+            <p>
+              <% strophe.each do |ligne| -%>
+                <%= ligne %><br />
+              <% end -%>
+            </p>
+            <br />
+          <% end -%>
+        </div>
+
+        <div class='column is-6 has-vertically-aligned-content'>
+          <% data.poemes.deux.each do |strophe| -%>
+            <p>
+              <% strophe.each do |ligne| -%>
+                <%= ligne %><br />
+              <% end -%>
+            </p>
+            <br />
+          <% end -%>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="main-content">
+  <div class='section-light about-me' id='le_chateau_descriptif'>
+    <div class='container'>
+      <div class='column is-12 about-me'>
+        <h1 class='title has-text-centered section-title'>L'équipement</h1>
+      </div>
+
+      <div class='columns is-multiline'>
+        <div class='column is-6 has-vertically-aligned-content'>
+          <p class='is-larger has-text-centered'>
+            <strong>L’équipement ménager&nbsp;:</strong>
+          </p>
+          <ul>
+            <% data.equipements.menager.each do |item| -%>
+              <li><%= item %></li>
+            <% end -%>
+          </ul>
+        </div>
+        <div class='column is-6 has-vertically-aligned-content'>
+          <p class='is-larger has-text-centered'>
+            <strong>L’équipement de loisir&nbsp;:</strong>
+          </p>
+          <ul>
+            <% data.equipements.loisir.each do |item| -%>
+              <li><%= item %></li>
+            <% end -%>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

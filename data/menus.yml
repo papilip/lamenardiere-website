@@ -1,0 +1,14 @@
+---
+- Accueil                               # accueil.html
+- Le château:                           #
+  - Situation géographique              # situation_geographique.html
+  - Descriptif                          # descriptif.html
+  - Histoire                            # histoire.html
+  - Poème                               # poeme.html
+  - L’équipement                        # l_equipement.html
+  - A visiter en Vendée                 # a_visiter_en_vendee.html
+  - Repères historiques                 # reperes_historiques.html
+- Les chambres                          # les_chambres.html
+- Photos                                # photos.html
+- Tarifs                                # tarifs.html
+- Contact                               # contact.html

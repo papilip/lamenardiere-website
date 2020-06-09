@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang='fr'>
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+
+    <title>Le château de La Ménardière, gîte de charme</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <%= stylesheet_link_tag 'index' %>
+
+    <script src="https://kit.fontawesome.com/6767c8383c.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <body>
+      <%= partial 'layouts/navbar' -%>
+
+      <%= yield %>
+    </body>
+
+    <div class='footer'>
+      <%= partial 'layouts/footer' -%>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <%= javascript_include_tag 'index' %>
+    <!-- <script src="../js/showcase.js"></script> -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-out",
+        duration: 800,
+      });
+    </script>
+  </body>
+</html>

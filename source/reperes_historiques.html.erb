@@ -1,0 +1,55 @@
+<div class="main-content">
+  <div class='section-light' id='reperes_historiques'>
+    <div class='container'>
+      <div class='column is-12 about-me'>
+        <h1 class='title has-text-centered section-title'>Repères historiques<br /><em>Les personnages qui ont marqué l'histoire de la Vendée</em></h1>
+      </div>
+    </div>
+  </div>
+
+  <% cpt = 0 -%>
+  <% data.reperes.each do |repere| -%>
+    <%
+      personnage = repere.personnage.parameterize.underscore
+      cpt += 1
+      color = cpt.odd? ? 'dark' : 'light'
+    -%>
+    <div class='section-<%= color %>'>
+      <div class='container'>
+        <div class='columns is-multiline'>
+          <% if cpt.odd? -%>
+            <div class='column is-10'>
+              <p class='is-larger'>
+                <strong>&emsp;&emsp;<%= repere.personnage %></strong>
+                <br />
+                <em>&emsp;&emsp;&emsp;&emsp;<%= repere.sous_titre %></em>
+              </p>
+              <br />
+              <% repere.bio.each_line do |line| -%>
+                <p><%= line %></p>
+              <% end -%>
+            </div>
+            <div class='column is-2'>
+              <%= image_tag "reperes/#{personnage}.jpg", class: 'is-rounded', alt: repere.personnage %>
+            </div>
+          <% else -%>
+            <div class='column is-2'>
+                <%= image_tag "reperes/#{personnage}.jpg", class: 'is-rounded', alt: repere.personnage %>
+              </div>
+              <div class='column is-10'>
+              <p class='is-larger'>
+                <strong>&emsp;&emsp;<%= repere.personnage %></strong>
+                <br />
+                <em>&emsp;&emsp;&emsp;&emsp;<%= repere.sous_titre %></em>
+              </p>
+              <br />
+              <% repere.bio.each_line do |line| -%>
+                <p><%= line %></p>
+              <% end -%>
+            </div>
+          <% end -%>
+        </div>
+      </div>
+    </div>
+  <% end -%>
+</div>

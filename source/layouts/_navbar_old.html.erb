@@ -1,0 +1,50 @@
+<!-- Begin Mobile Nav -->
+<nav class="navbar is-transparent is-hidden-desktop">
+  <!-- Begin Burger Menu -->
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <div class="title">Chateau de la Ménardière</div>
+    </a>
+
+    <div class="navbar-burger burger" data-target="mobile-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <!-- End Burger Menu -->
+
+  <div id="mobile-nav" class="navbar-menu">
+    <div class="navbar-end">
+      <% data.menus.each do |url, item| -%>
+        <div class="navbar-item">
+          <a class="navbar-item" href="/<%= url %>"><%= item %></a>
+        </div>
+      <% end -%>
+    </div>
+  </div>
+</nav>
+<!-- End Mobile Nav -->
+
+
+
+<!-- Begin Mobile Nav -->
+<nav class="navbar is-transparent is-hidden-mobile">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <div class="title">Chateau de la Ménardière</div>
+    </a>
+  </div>
+
+  <div id="mobile-nav" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        Home
+      </a>
+
+      <a class="navbar-item">
+        Documentation
+      </a>
+  </div>
+</nav>
+<!-- End Mobile Nav -->
