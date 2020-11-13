@@ -1,6 +1,6 @@
-= Tarifs et Réservations
+== Tarifs et Réservations
 
-== Saison 2020-2021
+=== Saison 2020-2021
 
 
 Les tarifs de réservation de La Ménardière
@@ -17,7 +17,7 @@ Les tarifs s'entendent pour une semaine du samedi au samedi.
 La location du dortoir est forfaitaire : 100 €
 
 
-'La réservation se fait par mail à l'adresse' 
+'La réservation se fait par mail à l'adresse'
 
 chateau.menardiere@gmail.com 
 
@@ -29,12 +29,8 @@ au    **06 10 19 38 01**
 
 ou par courrier postal
 
-
-4 rue du creux rouge
-
+4 rue du creux rouge +
 63100 CLERMONT FERRAND
-
-
 
 
 [width="80%",options="header,footer"]
@@ -43,15 +39,12 @@ ou par courrier postal
 |  | 
 |====================
 
-[IMPORTANT]
 
+image:ancv.png[ancv,5,5]
 
 **N'hésitez pas à appeler** 
 
 **nous nous ferons un plaisir de répondre**
 
 
-
-
-             
 
