@@ -30,7 +30,7 @@ html {
 
 .hero .title {
   font-family: 'Kaushan Script', sans-serif;
-  transform: rotate(-5deg);
+  /*transform: rotate(-5deg);*/
   font-size: 5rem;
   color: whitesmoke;
 }
@@ -347,7 +347,7 @@ body.preloader-site {
 
 .navbar-item .title {
   font-family: 'Kaushan Script', sans-serif;
-  transform: rotate(-2deg);
+  /*transform: rotate(-2deg);*/
   font-size: 2rem;
   color: hsl(217, 71%, 53%);
 }
