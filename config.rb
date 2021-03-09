@@ -3,11 +3,11 @@ require 'active_support'
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
-activate :asciidoc
-
 activate :autoprefixer do |prefix|
   prefix.browsers = 'last 2 versions'
 end
+
+activate :livereload
 
 # activate :i18n, mount_at_root: :fr
 
