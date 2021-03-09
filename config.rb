@@ -11,6 +11,13 @@ end
 
 # activate :i18n, mount_at_root: :fr
 
+# set :relative_links, true
+# set :images_dir, './images'
+
+configure :build do
+  set :http_prefix, "/a/b/c/"
+end
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
@@ -43,6 +50,19 @@ end
 #     'Helping'
 #   end
 # end
+helpers do
+  def aurl url
+    File.join(http_prefix, url)
+  end
+end
+
+configure :development do
+  set :http_prefix, '/'
+end
+
+configure :build do
+  set :http_prefix, './'
+end
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
@@ -50,4 +70,7 @@ end
 # configure :build do
 #   activate :minify_css
 #   activate :minify_javascript
+
+#   # Append a hash to asset urls (make sure to use the url helpers)
+#   # activate :asset_hash
 # end
